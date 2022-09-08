@@ -15,8 +15,8 @@
         }
 
         .row {
-            border: 2px solid;
             margin : 50px;
+            border : solid 2px;
             padding : 30px
         }
         img{
@@ -28,6 +28,15 @@
            
         }
 
+        .overview {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: left;
+        }
+
+       
+
     
 label {
   width: 50%;
@@ -36,47 +45,56 @@ label {
 
 .data {
     width: 49%;
+    margin-bottom: 16px;
+}
+
+label {
+    width: 250px;
 }
 
 button{         
     width: 20%;
-    display : inline-block;   
-    
+    display : inline-block; 
+    padding: inherit; 
+    margin-bottom: 16px; 
+    margin-right: 40%;
 }
+
+.
                         
-    </style>
+    </style>    
 
 </head>
 <body>
     <div class="container">
         <h1>Event 1</h1>
         <h4>Number of available seats: 23</h4>
+
         <div class="row">
-                <div class="col-md-3">
+                 <div class="col-md-3">
                     <img src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period1/2014/03/15/Photos/NOW_0363[1]--621x414.jpg"  alt="Event">
                 </div>
                 <div class="col-md-9">
-                    <form>
-                        <label for="Name">Name: </label>
-                        <input type="text"  name="Name" class="data"><br>
-                        <label for="Email">Email: </label>
-                        <input type="text"  name="Email" class="data"><br>
+                    <div class="overview">
+                        <label for="Name" >Name: </label>
+                        <input type="text"  name="Name" class="data">
+                        <label class="" for="Email">Email: </label>
+                        <input type="text"  name="Email" class="data">
                         <label for="Phone">Phone No: </label>
-                        <input type="text"  name="Phone" class="data"><br>
+                        <input type="text"  name="Phone" class="data">
                         <label for="button">Number of Seates: </label>
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">2</button>
-                      <br>
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">2</button><br>
                         <label for="Attendees">Number of Attendees 2: </label>
-                        <input type="text"  name="Attendees" class="data"><br>
-                        
-                        <input type="submit" value="Submit">
-             
-                        <input type="submit" value="Cancel">
-
-                      </form>
+                        <input type="text"  name="Attendees" class="data">
+                    </div>
+                    <input type="submit" value="Submit">             
+                    <input type="submit" value="Cancel">
                 </div>
         </div>
     </div>
+    
+</body>
+</html>
     
 </body>
 </html>
